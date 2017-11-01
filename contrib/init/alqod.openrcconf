@@ -1,0 +1,26 @@
+# /etc/conf.d/alqod: config file for /etc/init.d/alqod
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/alqo/alqo.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/alqod"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/alqod.pid"
+
+# Where to write alqod data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/alqod"
+
+# User and group to own alqod process
+#BITCOIND_USER="alqo"
+#BITCOIND_GROUP="alqo"
+
+# Path to alqod executable
+#BITCOIND_BIN="/usr/bin/alqod"
+
+# Nice value to run alqod under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

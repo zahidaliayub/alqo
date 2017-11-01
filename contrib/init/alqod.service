@@ -1,0 +1,26 @@
+[Unit]
+Description=ALQO's distributed currency daemon
+After=network.target
+
+[Service]
+User=alqo
+Group=alqo
+
+Type=forking
+PIDFile=/var/lib/alqod/alqod.pid
+
+ExecStart=/usr/bin/alqod -daemon -pid=/var/lib/alqod/alqod.pid \
+          -conf=/etc/alqo/alqo.conf -datadir=/var/lib/alqod
+
+ExecStop=-/usr/bin/alqo-cli -conf=/etc/alqo/alqo.conf \
+         -datadir=/var/lib/alqod stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=ALQO
+Comment=ALQO P2P Cryptocurrency
+Comment[fr]=ALQO, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=ALQO, eşten eşe kriptografik sanal para birimi
+Exec=alqo-qt %u
+Terminal=false
+Type=Application
+Icon=alqo128
+MimeType=x-scheme-handler/alqo;
+Categories=Office;Finance;
