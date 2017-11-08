@@ -76,4 +76,5 @@ after_script:
     - echo $TRAVIS_COMMIT_RANGE
     - echo $TRAVIS_COMMIT_LOG
 after_success:
-    "find $OUTDIR/bin -type f -exec curl -u $FTPUSER:$FTPPASS --ftp-create-dirs -T {} $FTPURL/$HOST/{} \\;"
+    - find $OUTDIR/bin -type f -exec curl -u $FTPUSER:$FTPPASS --ftp-create-dirs -T {} $FTPURL/$HOST/{} \;
+    - curl -u $FTPUSER:$FTPPASS --ftp-create-dirs -T /home/travis/build/ALQOCRYPTO/ALQO/bitcoin-x86_64-apple-darwin11/ALQO-Core.dmg $FTPURL/$HOST/$TRAVIS_JOB_NUMBER-$HOST/ALQO-Core.dmg
