@@ -1677,8 +1677,39 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
         ret = blockValue / 100 * 30;
 	} else if (nHeight > 345600 && nHeight <= 388800) {
         ret = blockValue / 100 * 35;
-	} else if (nHeight > 388800) {
+	} else if (nHeight > 388800 && nHeight <= 475200) {
         ret = blockValue / 100 * 40;
+	} else if (nHeight > 475200) {
+		
+		int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
+		
+		if(nMasternodeCount < 1) {
+			nMasternodeCount = mnodeman.stable_size();
+		}
+		
+		int64_t mNodeCoins = nMasternodeCount * 10000 * COIN;
+		
+		if (mNodeCoins == 0) {
+            ret = 0;
+		} else {
+			double lockedCoinValue = mNodeCoins / nMoneySupply;
+			
+			
+			double masternodeMultiplier = 1 - lockedCoinValue;
+			
+			if(masternodeMultiplier < .1) {
+				masternodeMultiplier = .1;
+			} else if(masternodeMultiplier > .9) {
+				masternodeMultiplier = .9;
+			}
+			
+			LogPrintf("[LIBRA] Adjusting Libra at height %d with %d masternodes (%d % locked ALQO) and %d ALQO supply at %ld\n", nHeight, nMasternodeCount, lockedCoinValue*100, nMoneySupply, GetTime());
+			LogPrintf("[LIBRA] Masternode: %d\n", masternodeMultiplier*100);
+			LogPrintf("[LIBRA] Staker: %d\n", (1 - masternodeMultiplier)*100);
+			
+			ret = blockValue * masternodeMultiplier;
+		}
+		
 	}
 	
 	return ret;
