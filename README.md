@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ALQOCRYPTO/ALQO.svg?branch=master)](https://travis-ci.org/ALQOCRYPTO/ALQO) [![GitHub version](https://badge.fury.io/gh/alqocrypto%2Falqo.svg)](https://badge.fury.io/gh/alqocrypto/Falqo)
+[![Build Status](https://travis-ci.org/ALQOCRYPTO/ALQO.svg?branch=master)](https://travis-ci.org/ALQOCRYPTO/ALQO) [![GitHub version](https://badge.fury.io/gh/alqocrypto%2Falqo.svg)](https://badge.fury.io/gh/alqocrypto/alqo)
 
 ALQO is a universal 3rd generation cryptocurrency that combines the best features of different coins
 in order to create an excellent new digital payment asset.
