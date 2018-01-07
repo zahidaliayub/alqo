@@ -52,3 +52,4 @@ _Proof of Stake will automatically be enabled at block 475201._
 # Further information
 
 _For more information check out our whitepaper at [alqo.org/whitepaper.pdf](https://alqo.org/whitepaper.pdf)_
+Alternatively we have added a non .pdf Version into our Github. You can find it in the ALQO Github Wiki. [https://github.com/ALQOCRYPTO/ALQO/wiki](https://github.com/ALQOCRYPTO/ALQO/wiki)
