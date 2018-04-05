@@ -69,19 +69,15 @@ SendCoinsDialog::SendCoinsDialog(QWidget* parent) : QDialog(parent),
     bool useDarKsend = settings.value("bUseDarKsend").toBool();
     bool useInstantX = settings.value("bUseInstantX").toBool();
     if (fLiteMode) {
-        ui->checkUseDarksend->setChecked(false);
-        ui->checkUseDarksend->setVisible(false);
         ui->checkInstantX->setVisible(false);
         CoinControlDialog::coinControl->useDarKsend = false;
         CoinControlDialog::coinControl->useInstantX = false;
     } else {
-        ui->checkUseDarksend->setChecked(useDarKsend);
         ui->checkInstantX->setChecked(useInstantX);
         CoinControlDialog::coinControl->useDarKsend = useDarKsend;
         CoinControlDialog::coinControl->useInstantX = useInstantX;
     }
 
-    connect(ui->checkUseDarksend, SIGNAL(stateChanged(int)), this, SLOT(updateDisplayUnit()));
     connect(ui->checkInstantX, SIGNAL(stateChanged(int)), this, SLOT(updateInstantX()));
 
     // Coin Control: clipboard actions
@@ -269,19 +265,9 @@ void SendCoinsDialog::on_sendButton_clicked()
     QString strFee = "";
     recipients[0].inputType = ONLY_DENOMINATED;
 
-    if (ui->checkUseDarksend->isChecked()) {
-        recipients[0].inputType = ONLY_DENOMINATED;
-        strFunds = tr("using") + " <b>" + tr("anonymous funds") + "</b>";
-        QString strNearestAmount(
-            BitcoinUnits::formatWithUnit(
-                model->getOptionsModel()->getDisplayUnit(), 0.1 * COIN));
-        strFee = QString(tr(
-            "(Darksend requires this amount to be rounded up to the nearest %1).")
-                             .arg(strNearestAmount));
-    } else {
-        recipients[0].inputType = ALL_COINS;
-        strFunds = tr("using") + " <b>" + tr("any available funds (not recommended)") + "</b>";
-    }
+    
+	recipients[0].inputType = ALL_COINS;
+	strFunds = tr("using") + " <b>" + tr("any available funds (not recommended)") + "</b>";
 
     if (ui->checkInstantX->isChecked()) {
         recipients[0].useInstantX = true;
@@ -572,12 +558,7 @@ void SendCoinsDialog::setBalance(const CAmount& balance, const CAmount& unconfir
     if (model && model->getOptionsModel()) {
         uint64_t bal = 0;
         QSettings settings;
-        settings.setValue("bUseDarKsend", ui->checkUseDarksend->isChecked());
-        if (ui->checkUseDarksend->isChecked()) {
-            bal = anonymizedBalance;
-        } else {
-            bal = balance;
-        }
+        bal = balance;
 
         ui->labelBalance->setText(BitcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(), bal));
     }
@@ -590,7 +571,6 @@ void SendCoinsDialog::updateDisplayUnit()
 
     setBalance(model->getBalance(), model->getUnconfirmedBalance(), model->getImmatureBalance(), model->getAnonymizedBalance(),
         model->getWatchBalance(), model->getWatchUnconfirmedBalance(), model->getWatchImmatureBalance());
-    CoinControlDialog::coinControl->useDarKsend = ui->checkUseDarksend->isChecked();
     coinControlUpdateLabels();
     ui->customFee->setDisplayUnit(model->getOptionsModel()->getDisplayUnit());
     updateMinFeeLabel();
@@ -924,8 +904,6 @@ void SendCoinsDialog::coinControlUpdateLabels()
         if (entry)
             CoinControlDialog::payAmounts.append(entry->getValue().amount);
     }
-
-    ui->checkUseDarksend->setChecked(CoinControlDialog::coinControl->useDarKsend);
 
     if (CoinControlDialog::coinControl->HasSelected()) {
         // actual coin control calculation

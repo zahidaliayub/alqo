@@ -1,16 +1,15 @@
-[![Build Status](https://travis-ci.org/ALQOCRYPTO/ALQO.svg?branch=master)](https://travis-ci.org/ALQOCRYPTO/ALQO) [![GitHub version](https://badge.fury.io/gh/alqocrypto%2Falqo.svg)](https://badge.fury.io/gh/alqocrypto/alqo)
-
 ALQO is a universal 3rd generation cryptocurrency that combines the best features of different coins
 in order to create an excellent new digital payment asset.
 
-Anonymized transactions using coin mixing technology. 1-Second-Transactions. Network stability with masternodes, each is secured with a collateral of 10.000 ALQO. 100% Governance.
+Milli-Second-Transactions with HyperSend.
+Network stability with masternodes, each is secured with a collateral of 10.000 ALQO. 100% Governance.
 
 For further information visit us at [alqo.org](https://alqo.org/) or visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=2343884.0)
 
 # Coin Specs
 
 • PoW Algorithm: Quark  
-• Premine: (#1 Block) 100,001 ALQO (0,17% of PoW) For 10 masternodes, going to be burned after 1 year.  
+• Premine: (#1 Block) 100,001 ALQO (0,17% of PoW)*  
 • PoW Blocks: 2 - 475200  
 • PoS Blocks: Starting from 475201  
 • Block Time: 60 Seconds  
@@ -20,17 +19,20 @@ For further information visit us at [alqo.org](https://alqo.org/) or visit our A
 • Maturity: 111 Confirmations  
 • Prefix: ALQO adresses start with the capital letter "A"   
 
+*the premine is going to be burned 30th April.
+
 # PoW Reward Distribution
 
 _Proof of Work block rewards, masternode reward allocation starting at the 10th November 2017_
 <table>
-<tr><th>Block Height</th><th>Reward Amount</th><th>Masternodes</th><th>Miners</th></tr>
-<tr><td>Block 2 - 86400</td><td>200 ALQO</td><td>   Masternodes 20%</td><td>Miners 80%</td></tr>
-<tr><td>Block 86401 - 151200</td><td>150 ALQO</td><td>  Masternodes 25%</td><td>Miners 75%</td></tr>
-<tr><td>Block 151201 - 302400</td><td>125 ALQO</td><td>  Masternodes 30%</td><td>Miners 70%</td></tr>
-<tr><td>Block 302401 - 345600</td><td>100 ALQO</td><td>   Masternodes 35%</td><td>Miners 65%</td></tr>
-<tr><td>Block 345601 - 388800</td><td>75 ALQO</td><td>      Masternodes 40%</td><td>Miners 60%</td></tr>
-<tr><td>Block 388801 - 475200</td><td>50 ALQO</td><td>      Masternodes 40%</td><td>Miners 60%</td></tr>
+  <tr><th>Block Height</th><th>Reward Amount</th><th>Masternodes</th><th>Miners</th><th>DevFee</th></tr>
+  <tr><td>Block 2 - 86400</td><td>200 ALQO</td><td>   Masternodes 20%</td><td>Miners 80%</td><td>0%</td></tr>
+<tr><td>Block 86401 - 151200</td><td>150 ALQO</td><td>  Masternodes 25%</td><td>Miners 75%</td><td>0%</td></tr>
+<tr><td>Block 151201 - 225000</td><td>125 ALQO</td><td>  Masternodes 30%</td><td>Miners 70%</td><td>0%</td></tr>
+<tr><td>Block 225001 - 302400</td><td>125 ALQO</td><td>  Masternodes 60%</td><td>Miners 35%</td><td>5%</td></tr>
+<tr><td>Block 302401 - 345600</td><td>100 ALQO</td><td>   Masternodes 65%</td><td>Miners 35%</td><td>5%</td></tr>
+<tr><td>Block 345601 - 388800</td><td>75 ALQO</td><td>      Masternodes 60%</td><td>Miners 35%</td><td>5%</td></tr>
+<tr><td>Block 388801 - 475200</td><td>50 ALQO</td><td>      Masternodes 60%</td><td>Miners 35%</td><td>5%</td></tr>
 </table>
 
 Masternode and staker rewards with PoS:

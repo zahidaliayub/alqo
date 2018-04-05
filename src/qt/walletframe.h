@@ -52,10 +52,6 @@ private:
 public slots:
     /** Switch to overview (home) page */
     void gotoOverviewPage();
-	
-	////AAAA
-	  /** Switch to overview (home) page */
-    void gotocoinmixPage();
     /** Switch to history (transactions) page */
     void gotoHistoryPage();
     /** Switch to masternode page */

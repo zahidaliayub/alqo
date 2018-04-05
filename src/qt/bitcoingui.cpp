@@ -81,7 +81,6 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
                                                                             overviewAction(0),
                                                                             historyAction(0),
                                                                             masternodeAction(0),
-																			coinmixAction(0),
                                                                             quitAction(0),
                                                                             sendCoinsAction(0),
                                                                             usedSendingAddressesAction(0),
@@ -325,20 +324,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 #endif
     tabGroup->addAction(historyAction);
 
-//AAAA LimxDev Coinmix Tab	
 
-    coinmixAction = new QAction(QIcon(":/icons/coinmix"), tr("&Coinmix"), this);
-    coinmixAction->setStatusTip(tr("Show general coinmixview of wallet"));
-    coinmixAction->setToolTip(coinmixAction->statusTip());
-    coinmixAction->setCheckable(true);
-
-	
-#ifdef Q_OS_MAC
-    coinmixAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_6));
-#else
-    coinmixAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
-#endif
-	tabGroup->addAction(coinmixAction);
 	
 	///	Unlock
 	unlockWalletAction = new QAction(QIcon(":/icons/blueunlock"),tr("&Unlock Wallet..."), this);
@@ -383,10 +369,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     connect(receiveCoinsAction, SIGNAL(triggered()), this, SLOT(gotoReceiveCoinsPage()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
-	// AAAA
-	connect(coinmixAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
-	
-    connect(coinmixAction, SIGNAL(triggered()), this, SLOT(gotocoinmixPage()));
+
 	connect(unlockWalletAction, SIGNAL(triggered()),this, SLOT(unlockWallet()));
 	connect(lockWalletAction2, SIGNAL(triggered()),this, SLOT(unlockWallet()));
 	
@@ -562,7 +545,6 @@ void BitcoinGUI::createToolBars()
         if (settings.value("fShowMasternodesTab").toBool()) {
             toolbar->addAction(masternodeAction);
         }
-		toolbar->addAction(coinmixAction);
 		toolbar->addAction(unlockWalletAction);
 		toolbar->addAction(lockWalletAction2);
         toolbar->setMovable(false); // remove unused icon in upper left corner
@@ -649,7 +631,6 @@ void BitcoinGUI::setWalletActionsEnabled(bool enabled)
 {
     overviewAction->setEnabled(enabled);
 	////AAAAA
-	coinmixAction->setEnabled(enabled);
 	unlockWalletAction->setEnabled(enabled);
 	lockWalletAction2->setEnabled(enabled);
 	sendCoinsAction->setEnabled(enabled);
@@ -781,12 +762,6 @@ void BitcoinGUI::gotoOverviewPage()
     if (walletFrame) walletFrame->gotoOverviewPage();
 }
 ////AAAAA
-
-void BitcoinGUI::gotocoinmixPage()
-{
-    coinmixAction->setChecked(true);
-    if (walletFrame) walletFrame->gotocoinmixPage();
-}
 
 void BitcoinGUI::gotoHistoryPage()
 {
@@ -1211,7 +1186,6 @@ void BitcoinGUI::setEncryptionStatus(int status)
 }
 #endif // ENABLE_WALLET
 
-//coinmixAction = new QAction(QIcon(":/icons/coinmix"), tr("&Coinmix"), this);
 
 void BitcoinGUI::showNormalIfMinimized(bool fToggleHidden)
 {

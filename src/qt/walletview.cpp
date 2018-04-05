@@ -15,7 +15,6 @@
 #include "multisenddialog.h"
 #include "optionsmodel.h"
 #include "overviewpage.h"
-#include "coinmix.h"
 #include "receivecoinsdialog.h"
 #include "sendcoinsdialog.h"
 #include "signverifymessagedialog.h"
@@ -41,10 +40,8 @@ WalletView::WalletView(QWidget* parent) : QStackedWidget(parent),
 {
     // Create tabs
     overviewPage = new OverviewPage();
-	//AAAA
-	coinmix = new Coinmix();
 	
-	//coinmix = new QWidget(this);
+
     explorerWindow = new BlockExplorer(this);
     transactionsPage = new QWidget(this);
     QVBoxLayout* vbox = new QVBoxLayout();
@@ -79,8 +76,6 @@ WalletView::WalletView(QWidget* parent) : QStackedWidget(parent),
     sendCoinsPage = new SendCoinsDialog();
 
     addWidget(overviewPage);
-	////AAAA
-	addWidget(coinmix);
     addWidget(transactionsPage);
     addWidget(receiveCoinsPage);
     addWidget(sendCoinsPage);
@@ -140,8 +135,6 @@ void WalletView::setClientModel(ClientModel* clientModel)
     this->clientModel = clientModel;
 
     overviewPage->setClientModel(clientModel);
-	///AAAA
-	//coinmix->setClientModel(clientModel);
     sendCoinsPage->setClientModel(clientModel);
     QSettings settings;
     if (settings.value("fShowMasternodesTab").toBool()) {
@@ -156,8 +149,6 @@ void WalletView::setWalletModel(WalletModel* walletModel)
     // Put transaction list in tabs
     transactionView->setModel(walletModel);
     overviewPage->setWalletModel(walletModel);
-	//AAAA
-	coinmix->setWalletModel(walletModel);
     QSettings settings;
     if (settings.value("fShowMasternodesTab").toBool()) {
         masternodeListPage->setWalletModel(walletModel);
@@ -206,12 +197,6 @@ void WalletView::processNewTransaction(const QModelIndex& parent, int start, int
 void WalletView::gotoOverviewPage()
 {
     setCurrentWidget(overviewPage);
-}
-///AAAA
-
-void WalletView::gotocoinmixPage()
-{
-    setCurrentWidget(coinmix);
 }
 
 
@@ -294,7 +279,6 @@ bool WalletView::handlePaymentRequest(const SendCoinsRecipient& recipient)
 void WalletView::showOutOfSyncWarning(bool fShow)
 {
     overviewPage->showOutOfSyncWarning(fShow);
-	coinmix->showOutOfSyncWarning(fShow);
 }
 
 void WalletView::updateEncryptionStatus()

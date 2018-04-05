@@ -132,35 +132,6 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
     ui->labelDarksendSyncStatus->setText("(" + tr("out of sync") + ")");
     ui->labelTransactionsStatus->setText("(" + tr("out of sync") + ")");
 
-
-	
-    if (fLiteMode) {
-        ui->frameDarksend->setVisible(false);
-    } else 
-	{
-        if (fMasterNode) {
-            ui->toggleDarksend->setText("(" + tr("Disabled") + ")");
-            ui->DarksendAuto->setText("(" + tr("Disabled") + ")");
-            ui->DarksendReset->setText("(" + tr("Disabled") + ")");
-            ui->frameDarksend->setEnabled(false);
-			//AAAA Coinmix Tab
-			ui->frameDarksend->setVisible(false);
-        } else {
-            if (!fEnableDarksend) {
-                ui->toggleDarksend->setText(tr("Start Darksend"));
-            } else {
-                ui->toggleDarksend->setText(tr("Stop Darksend"));
-            }
-			//AAAA Coinmix Tab
-			ui->frameDarksend->setVisible(false);
-            timer = new QTimer(this);
-            connect(timer, SIGNAL(timeout()), this, SLOT(DarKsendStatus()));
-            timer->start(1000);
-        }
-    }
-	
-	
-
     // start with displaying the "out of sync" warnings
     showOutOfSyncWarning(true);
 }

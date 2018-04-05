@@ -3723,8 +3723,8 @@ https://www.transifex.com/alqo-project/alqo-project-translations</source>
     </message>
     <message>
         <location line="+57"/>
-        <source>InstantX</source>
-        <translation>InstantX</translation>
+        <source>HyperSend</source>
+        <translation>HyperSend</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3806,8 +3806,8 @@ https://www.transifex.com/alqo-project/alqo-project-translations</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>and InstantX</source>
-        <translation>and InstantX</translation>
+        <source>and HyperSend</source>
+        <translation>and HyperSend</translation>
     </message>
     <message>
         <location line="+24"/>
@@ -4281,18 +4281,18 @@ https://www.transifex.com/alqo-project/alqo-project-translations</source>
     </message>
     <message>
         <location line="-31"/>
-        <source>%1/offline (verified via Instantx)</source>
-        <translation>%1/offline (verified via Instantx)</translation>
+        <source>%1/offline (verified via HyperSend)</source>
+        <translation>%1/offline (verified via HyperSend)</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1/confirmed (verified via Instantx)</source>
-        <translation>%1/confirmed (verified via Instantx)</translation>
+        <source>%1/confirmed (verified via HyperSend)</source>
+        <translation>%1/confirmed (verified via HyperSend)</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1 confirmations (verified via Instantx)</source>
-        <translation>%1 confirmations (verified via Instantx)</translation>
+        <source>%1 confirmations (verified via HyperSend)</source>
+        <translation>%1 confirmations (verified via HyperSend)</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -4312,28 +4312,28 @@ https://www.transifex.com/alqo-project/alqo-project-translations</source>
     </message>
     <message>
         <location line="-26"/>
-        <source>%1/offline (InstantX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (InstantX verification in progress - %2 of %3 signatures)</translation>
+        <source>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1/confirmed (InstantX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/confirmed (InstantX verification in progress - %2 of %3 signatures )</translation>
+        <source>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1 confirmations (InstantX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 confirmations (InstantX verification in progress - %2 of %3 signatures)</translation>
+        <source>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>%1/offline (InstantX verification failed)</source>
-        <translation>%1/offline (InstantX verification failed)</translation>
+        <source>%1/offline (HyperSend verification failed)</source>
+        <translation>%1/offline (HyperSend verification failed)</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1/confirmed (InstantX verification failed)</source>
-        <translation>%1/confirmed (InstantX verification failed)</translation>
+        <source>%1/confirmed (HyperSend verification failed)</source>
+        <translation>%1/confirmed (HyperSend verification failed)</translation>
     </message>
     <message>
         <location line="+32"/>
@@ -4947,7 +4947,7 @@ https://www.transifex.com/alqo-project/alqo-project-translations</source>
     <message>
         <location line="-20"/>
         <location line="+9"/>
-        <source>InstantX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 ALQO.</source>
+        <source>HyperSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 ALQO.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5058,7 +5058,7 @@ https://www.transifex.com/alqo-project/alqo-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Disable all ALQO specific functionality (Masternodes, Darksend, InstantX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all ALQO specific functionality (Masternodes, Darksend, HyperSend, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5068,8 +5068,8 @@ https://www.transifex.com/alqo-project/alqo-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enable Instantx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation type="unfinished">Enable Instantx, show confirmations for locked transactions (bool, default: %s)</translation>
+        <source>Enable HyperSend, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation type="unfinished">Enable HyperSend, show confirmations for locked transactions (bool, default: %s)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5228,8 +5228,8 @@ https://www.transifex.com/alqo-project/alqo-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>InstantX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation type="unfinished">InstantX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</translation>
+        <source>HyperSend requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation type="unfinished">HyperSend requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -6250,8 +6250,8 @@ for example: alertnotify=echo %%s | mail -s &quot;ALQO Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>InstantX options:</source>
-        <translation type="unfinished">InstantX options:</translation>
+        <source>HyperSend options:</source>
+        <translation type="unfinished">HyperSend options:</translation>
     </message>
     <message>
         <location line="+1"/>

@@ -2368,8 +2368,8 @@ https://www.transifex.com/alqo-crypto/alqo-wallet-translations/</translation>
         <translation>Obfuscate</translation>
     </message>
     <message>
-        <source>InstantX</source>
-        <translation>InstantX</translation>
+        <source>HyperSend</source>
+        <translation>HyperSend</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2424,8 +2424,8 @@ https://www.transifex.com/alqo-crypto/alqo-wallet-translations/</translation>
         <translation>всякакви налични средства (не се препоръчва)</translation>
     </message>
     <message>
-        <source>and InstantX</source>
-        <translation>и InstantX</translation>
+        <source>and HyperSend</source>
+        <translation>и HyperSend</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2778,16 +2778,16 @@ https://www.transifex.com/alqo-crypto/alqo-wallet-translations/</translation>
         <translation>конфликтно</translation>
     </message>
     <message>
-        <source>%1/offline (verified via Instantx)</source>
-        <translation>%1/офлайн(проверено през Instantx)</translation>
+        <source>%1/offline (verified via HyperSend)</source>
+        <translation>%1/офлайн(проверено през HyperSend)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via Instantx)</source>
-        <translation>%1/потвърдени (проверено от Instantx)</translation>
+        <source>%1/confirmed (verified via HyperSend)</source>
+        <translation>%1/потвърдени (проверено от HyperSend)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via Instantx)</source>
-        <translation>%1 потвърждения (проверено от Instantx)</translation>
+        <source>%1 confirmations (verified via HyperSend)</source>
+        <translation>%1 потвърждения (проверено от HyperSend)</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -2802,24 +2802,24 @@ https://www.transifex.com/alqo-crypto/alqo-wallet-translations/</translation>
         <translation>включена в %1 блока</translation>
     </message>
     <message>
-        <source>%1/offline (InstantX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/офлайн (InstantX проверка в процес - %2 of %3 подписани)</translation>
+        <source>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/офлайн (HyperSend проверка в процес - %2 of %3 подписани)</translation>
     </message>
     <message>
-        <source>%1/confirmed (InstantX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/потвърдени (InstantX проверка в процес - %2 of %3 подписани )</translation>
+        <source>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/потвърдени (HyperSend проверка в процес - %2 of %3 подписани )</translation>
     </message>
     <message>
-        <source>%1 confirmations (InstantX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 потвърждения (InstantX проверка в процес - %2 of %3 подписвания)</translation>
+        <source>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 потвърждения (HyperSend проверка в процес - %2 of %3 подписвания)</translation>
     </message>
     <message>
-        <source>%1/offline (InstantX verification failed)</source>
-        <translation>%1/офлайн (InstantX проверката е неуспешна)</translation>
+        <source>%1/offline (HyperSend verification failed)</source>
+        <translation>%1/офлайн (HyperSend проверката е неуспешна)</translation>
     </message>
     <message>
-        <source>%1/confirmed (InstantX verification failed)</source>
-        <translation>%1/потвърдени (InstantX проверката е неуспешна)</translation>
+        <source>%1/confirmed (HyperSend verification failed)</source>
+        <translation>%1/потвърдени (HyperSend проверката е неуспешна)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -3276,8 +3276,8 @@ https://www.transifex.com/alqo-crypto/alqo-wallet-translations/</translation>
         <translation>Изпращане</translation>
     </message>
     <message>
-        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 DNET.</source>
-        <translation>InstantX не поддържа изпращане на толкова големи суми. Транзакциите са ограничени до %1 DNET.</translation>
+        <source>HyperSend doesn't support sending values that high yet. Transactions are currently limited to %1 DNET.</source>
+        <translation>HyperSend не поддържа изпращане на толкова големи суми. Транзакциите са ограничени до %1 DNET.</translation>
     </message>
 </context>
 <context>
@@ -3358,8 +3358,8 @@ https://www.transifex.com/alqo-crypto/alqo-wallet-translations/</translation>
         <translation>В този режим -genproclimit се контролира колко блока са генерирани моментално.</translation>
     </message>
     <message>
-        <source>InstantX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>InstantX изисква средства с поне 6 потвърждения, може да се наложи да почакате няколко минути и да опитате отново.</translation>
+        <source>HyperSend requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>HyperSend изисква средства с поне 6 потвърждения, може да се наложи да почакате няколко минути и да опитате отново.</translation>
     </message>
     <message>
         <source>Name to construct url for KeePass entry that stores the wallet passphrase</source>
@@ -3614,16 +3614,16 @@ https://www.transifex.com/alqo-crypto/alqo-wallet-translations/</translation>
         <translation>Изтриване на всички транзакции на портфейла и  възстановява само тези части на блок веригата чрез -rescan при стартиране</translation>
     </message>
     <message>
-        <source>Disable all ALQO specific functionality (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, default: %u)</source>
-        <translation>Изключване на всички специфични ALQO функции (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, по подразбиране: %u)</translation>
+        <source>Disable all ALQO specific functionality (Masternodes, Obfuscate, HyperSend, Budgeting) (0-1, default: %u)</source>
+        <translation>Изключване на всички специфични ALQO функции (Masternodes, Obfuscate, HyperSend, Budgeting) (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Разпространява се под MIT софтуерен лиценз,вижте придружаващият файл COPYING или&lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable Instantx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Включен Instantx,покажи потвърждения за заключени транзакции (bool, по подразбиране: %s)</translation>
+        <source>Enable HyperSend, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Включен HyperSend,покажи потвърждения за заключени транзакции (bool, по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Enable use of automated obfuscate for funds stored in this wallet (0-1, default: %u)</source>
@@ -3903,8 +3903,8 @@ for example: alertnotify=echo %%s | mail -s "ALQO Alert" admin@foo.com
         <translation>Въвеждането е невалидно.</translation>
     </message>
     <message>
-        <source>InstantX options:</source>
-        <translation>InstantX опции:</translation>
+        <source>HyperSend options:</source>
+        <translation>HyperSend опции:</translation>
     </message>
     <message>
         <source>Insufficient funds.</source>

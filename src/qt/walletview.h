@@ -13,7 +13,6 @@
 class BitcoinGUI;
 class ClientModel;
 class OverviewPage;
-class Coinmix;
 class ReceiveCoinsDialog;
 class SendCoinsDialog;
 class SendCoinsRecipient;
@@ -61,9 +60,6 @@ private:
     WalletModel* walletModel;
 
     OverviewPage* overviewPage;
-	//AAAA
-	//QWidget* coinmix;
-	Coinmix* coinmix;
     QWidget* transactionsPage;
     ReceiveCoinsDialog* receiveCoinsPage;
     SendCoinsDialog* sendCoinsPage;
@@ -78,9 +74,6 @@ private:
 public slots:
     /** Switch to overview (home) page */
     void gotoOverviewPage();
-	///AAAA
-	/** Switch to overview (home) page */
-    void gotocoinmixPage();
     /** Switch to history (transactions) page */
     void gotoHistoryPage();
     /** Switch to masternode page */

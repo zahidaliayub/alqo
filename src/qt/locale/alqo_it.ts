@@ -2222,8 +2222,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Obfuscate</translation>
     </message>
     <message>
-        <source>InstantX</source>
-        <translation>InstantX</translation>
+        <source>HyperSend</source>
+        <translation>HyperSend</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2274,8 +2274,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>tutti i fondi disponibili (non raccomandato)</translation>
     </message>
     <message>
-        <source>and InstantX</source>
-        <translation>e InstantX</translation>
+        <source>and HyperSend</source>
+        <translation>e HyperSend</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2620,16 +2620,16 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>in conflitto</translation>
     </message>
     <message>
-        <source>%1/offline (verified via Instantx)</source>
+        <source>%1/offline (verified via HyperSend)</source>
         <translation>%1/offline (verificato via intantx)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via Instantx)</source>
-        <translation>%1/confermato (verificato via Instantx)</translation>
+        <source>%1/confirmed (verified via HyperSend)</source>
+        <translation>%1/confermato (verificato via HyperSend)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via Instantx)</source>
-        <translation>%1 conferme (verificate via Instantx)</translation>
+        <source>%1 confirmations (verified via HyperSend)</source>
+        <translation>%1 conferme (verificate via HyperSend)</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -2644,24 +2644,24 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>%1 conferme</translation>
     </message>
     <message>
-        <source>%1/offline (InstantX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (InstantX verifica in corso - %2 di %3 firme)</translation>
+        <source>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/offline (HyperSend verifica in corso - %2 di %3 firme)</translation>
     </message>
     <message>
-        <source>%1/confirmed (InstantX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/confermato (InstantX verifica in corso - %2 di %3 firme )</translation>
+        <source>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/confermato (HyperSend verifica in corso - %2 di %3 firme )</translation>
     </message>
     <message>
-        <source>%1 confirmations (InstantX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 conferma (InstantX verifica in corso - %2 di %3 firme)</translation>
+        <source>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 conferma (HyperSend verifica in corso - %2 di %3 firme)</translation>
     </message>
     <message>
-        <source>%1/offline (InstantX verification failed)</source>
-        <translation>%1/offline (InstantX verifica fallita)</translation>
+        <source>%1/offline (HyperSend verification failed)</source>
+        <translation>%1/offline (HyperSend verifica fallita)</translation>
     </message>
     <message>
-        <source>%1/confirmed (InstantX verification failed)</source>
-        <translation>%1/confermato (InstantX verifica fallita)</translation>
+        <source>%1/confirmed (HyperSend verification failed)</source>
+        <translation>%1/confermato (HyperSend verifica fallita)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -3118,8 +3118,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Invia alqo</translation>
     </message>
     <message>
-        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 DNET.</source>
-        <translation>InstantX non supporta ancora l'invio di somme così alte. Le transazioni sono attualmente limitate al %1 DNET.</translation>
+        <source>HyperSend doesn't support sending values that high yet. Transactions are currently limited to %1 DNET.</source>
+        <translation>HyperSend non supporta ancora l'invio di somme così alte. Le transazioni sono attualmente limitate al %1 DNET.</translation>
     </message>
 </context>
 <context>
@@ -3196,8 +3196,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>In questa modalità -genproclimit determina quanti blocchi saranno generati immediatamente.</translation>
     </message>
     <message>
-        <source>InstantX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>InstantX richiede input con almeno 6 conferme, potrebbe essere necessario attendere qualche minuto e poi riprovare.</translation>
+        <source>HyperSend requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>HyperSend richiede input con almeno 6 conferme, potrebbe essere necessario attendere qualche minuto e poi riprovare.</translation>
     </message>
     <message>
         <source>Name to construct url for KeePass entry that stores the wallet passphrase</source>
@@ -3432,8 +3432,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>Cancella tutte le transazioni del portafoglio e sistema solo quelle parti della catena di blocchi mediante -rescan quando apri il portafoglio</translation>
     </message>
     <message>
-        <source>Enable Instantx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Abilita Instantx, mostra conferme per le transazioni bloccate (bool, predefinito: %s)</translation>
+        <source>Enable HyperSend, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Abilita HyperSend, mostra conferme per le transazioni bloccate (bool, predefinito: %s)</translation>
     </message>
     <message>
         <source>Enable use of automated obfuscate for funds stored in this wallet (0-1, default: %u)</source>
@@ -3516,8 +3516,8 @@ Più URL vengono separati da una barra verticale |.</translation>
         <translation>L'input non è valido.</translation>
     </message>
     <message>
-        <source>InstantX options:</source>
-        <translation>Opzioni InstantX</translation>
+        <source>HyperSend options:</source>
+        <translation>Opzioni HyperSend</translation>
     </message>
     <message>
         <source>Insufficient funds.</source>

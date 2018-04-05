@@ -93,8 +93,6 @@ private:
 
     QMenuBar* appMenuBar;
     QAction* overviewAction;
-	////AAAA
-	QAction* coinmixAction;
     QAction* historyAction;
     QAction* masternodeAction;
     QAction* quitAction;
@@ -199,9 +197,6 @@ private slots:
 #ifdef ENABLE_WALLET
     /** Switch to overview (home) page */
     void gotoOverviewPage();
-	//AAAA
-	/** Switch to coinmix (home) page */
-    void gotocoinmixPage();
     /** Switch to history (transactions) page */
     void gotoHistoryPage();
     /** Switch to Explorer Page */

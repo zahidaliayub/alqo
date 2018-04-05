@@ -188,7 +188,6 @@ HEADERS += src/activemasternode.h \
            src/qt/optionsdialog.h \
            src/qt/optionsmodel.h \
            src/qt/overviewpage.h \
-		   src/qt/coinmix.h \
            src/qt/paymentrequest.pb.h \
            src/qt/paymentrequestplus.h \
            src/qt/paymentserver.h \
@@ -337,7 +336,6 @@ HEADERS += src/activemasternode.h \
            src/qt/alqo.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
-		   src/qt/coinmix.moc \
            src/qt/rpcconsole.moc \
            src/secp256k1/src/secp256k1.c
 FORMS += src/qt/forms/addressbookpage.ui \
@@ -350,7 +348,6 @@ FORMS += src/qt/forms/addressbookpage.ui \
          src/qt/forms/openuridialog.ui \
          src/qt/forms/optionsdialog.ui \
 		 src/qt/forms/overviewpage.ui \
-		 src/qt/forms/coinmix.ui \
          src/qt/forms/receivecoinsdialog.ui \
          src/qt/forms/receiverequestdialog.ui \
          src/qt/forms/rpcconsole.ui \
@@ -485,7 +482,6 @@ SOURCES += src/activemasternode.cpp \
            src/qt/optionsdialog.cpp \
            src/qt/optionsmodel.cpp \
            src/qt/overviewpage.cpp \
-		   src/qt/coinmix.cpp \
            src/qt/paymentrequest.pb.cc \
            src/qt/paymentrequestplus.cpp \
            src/qt/paymentserver.cpp \

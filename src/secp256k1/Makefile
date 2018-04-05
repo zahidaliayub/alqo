@@ -480,7 +480,7 @@ AR = /usr/bin/ar
 AUTOCONF = ${SHELL} /root/ALQO/src/secp256k1/build-aux/missing autoconf
 AUTOHEADER = ${SHELL} /root/ALQO/src/secp256k1/build-aux/missing autoheader
 AUTOMAKE = ${SHELL} /root/ALQO/src/secp256k1/build-aux/missing automake-1.15
-AWK = gawk
+AWK = mawk
 BREW = 
 CC = gcc
 CCDEPMODE = depmode=gcc3

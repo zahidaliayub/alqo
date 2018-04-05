@@ -213,8 +213,6 @@ void OptionsDialog::setMapper()
 
 
     /* Darksend Rounds */
-    mapper->addMapping(ui->DarksendRounds, OptionsModel::DarksendRounds);
-    mapper->addMapping(ui->anonymizeALQO, OptionsModel::AnonymizeALQOAmount);
     mapper->addMapping(ui->showMasternodesTab, OptionsModel::ShowMasternodesTab);
 }
 
