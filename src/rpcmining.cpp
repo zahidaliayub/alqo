@@ -586,10 +586,12 @@ Value getblocktemplate(const Array& params, bool fHelp)
         result.push_back(Pair("payee", ""));
         result.push_back(Pair("payee_amount", ""));
     }
-		
+	
     result.push_back(Pair("masternode_payments", pblock->nTime > Params().StartMasternodePayments()));
     result.push_back(Pair("enforce_masternode_payments", true));
 
+	result.push_back(Pair("developerfee", (int64_t)pblock->vtx[0].vout[2].nValue));
+	result.push_back(Pair("developerfee_wallet", "AG6MCBRozzcQMMi2SXdi4TJhhLeycQERyk"));
     return result;
 }
 
