@@ -3138,7 +3138,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
 	CBlockIndex* prevBlock = chainActive.Tip();
 	if (prevBlock != NULL) {
 		int blockHeight = prevBlock->nHeight + 1;
-		if(blockHeight > 225000 && block.nVersion != 4)
+		if(blockHeight > 225001 && block.nVersion != 4)
 			return state.DoS(100, error("CheckBlockHeader() : invalid blockversion"),
 				REJECT_INVALID, "invalid-blockversion");
 	}
