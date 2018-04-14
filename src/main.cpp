@@ -3106,12 +3106,12 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
 		if (!CheckBlockHeader(block, state, fCheckPOW))
 			return state.DoS(100, error("CheckBlock() : CheckBlockHeader failed"),
 				REJECT_INVALID, "bad-header", true);
-}
+	}
 			/*
 			    if (!CheckBlockHeader(block, state, block.IsProofOfWork()))
-        return state.DoS(100, error("CheckBlock() : CheckBlockHeader failed"),
-REJECT_INVALID, "bad-header", true);
-*/
+					return state.DoS(100, error("CheckBlock() : CheckBlockHeader failed"),
+					REJECT_INVALID, "bad-header", true);
+			*/
     // Check timestamp
     LogPrint("debug", "%s: block=%s  is proof of stake=%d\n", __func__, block.GetHash().ToString().c_str(), block.IsProofOfStake());
     if (block.GetBlockTime() > GetAdjustedTime() + (block.IsProofOfStake() ? 180 : 7200)) // 3 minute future drift for PoS
@@ -3202,13 +3202,12 @@ REJECT_INVALID, "bad-header", true);
                 nHeight = (*mi).second->nHeight + 1;
         }
 
-        if (nHeight != 0 && !IsInitialBlockDownload()) {
+        if (nHeight != 0) {
             if (!IsBlockPayeeValid(block, nHeight)) {
                 mapRejectedBlocks.insert(make_pair(block.GetHash(), GetTime()));
                 return state.DoS(100, error("CheckBlock() : Couldn't find masternode/budget payment"));
             }
         } else {
-            if (fDebug)
                 LogPrintf("CheckBlock(): Masternode payment check skipped on sync - skipping IsBlockPayeeValid()\n");
         }
     }

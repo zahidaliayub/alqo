@@ -305,12 +305,6 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 	
 	CBitcoinAddress developerfeeaddress("AG6MCBRozzcQMMi2SXdi4TJhhLeycQERyk");
     CScript developerfeescriptpubkey = GetScriptForDestination(developerfeeaddress.Get());
-	
-	
-	//TEMPORARY FIX
-	if(pindexPrev->nHeight +1 > 151200 && pindexPrev->nHeight +1 <= 152500) {
-		masternodePayment = GetMasternodePayment(152501, blockValue);
-	}
 
     if (hasPayment) {
         if (fProofOfStake) {
@@ -579,9 +573,6 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
 		
     BOOST_FOREACH (CMasternodePayee& payee, vecPayments) {
         bool found = false;
-		if(nBlockHeight <= 225000) foundDevFee = true;
-		
-				
         BOOST_FOREACH (CTxOut out, txNew.vout) {
             if (payee.scriptPubKey == out.scriptPubKey) {
                 if(out.nValue >= requiredMasternodePayment)
@@ -613,11 +604,13 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
         }
     }
 
-	if(foundDevFee)
-		LogPrintf("CMasternodePayments::IsTransactionValid - Missing required payment of %s to %s\n", FormatMoney(requiredMasternodePayment).c_str(), strPayeesPossible.c_str());
-	else
+	if(!foundDevFee)
+	{
 		LogPrintf("CMasternodePayments::IsTransactionValid - Missing developerfee of %s\n", FormatMoney(requiredDeveloperPayment).c_str());
+	}
 	
+	LogPrintf("CMasternodePayments::IsTransactionValid - Missing required payment of %s to %s\n", FormatMoney(requiredMasternodePayment).c_str(), strPayeesPossible.c_str());
+
     return false;
 }
 
