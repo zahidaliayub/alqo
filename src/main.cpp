@@ -3135,6 +3135,12 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 REJECT_INVALID, "bad-txns-duplicate", true);
     }
 
+	CBlockIndex* prevBlock = chainActive.Tip();
+	int blockHeight = prevBlock->nHeight + 1;
+	if(blockHeight > 225000 && block.nVersion != 4)
+		return state.DoS(100, error("CheckBlockHeader() : invalid blockversion"),
+            REJECT_INVALID, "invalid-blockversion");
+			
     // All potential-corruption validation must be done before we do any
     // transaction validation, as otherwise we may mark the header as invalid
     // because we receive the wrong transactions for it.
