@@ -568,11 +568,13 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
 		
 	bool foundDevFee = false;
 	BOOST_FOREACH (CMasternodePayee& payee, vecPayments) {
-		if(payee.scriptPubKey == developerfeescriptpubkey) {
-				if(out.nValue >= requiredDeveloperPayment) {
-					foundDevFee = true;
-					LogPrintf("Developer-Fee Payment found! Thanks for supporting ALQO!");
-				}
+		BOOST_FOREACH (CTxOut out, txNew.vout) {
+			if(payee.scriptPubKey == developerfeescriptpubkey) {
+					if(out.nValue >= requiredDeveloperPayment) {
+						foundDevFee = true;
+						LogPrintf("Developer-Fee Payment found! Thanks for supporting ALQO!");
+					}
+			}
 		}
 	}
 	
