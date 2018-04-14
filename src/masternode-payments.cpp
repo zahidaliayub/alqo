@@ -565,12 +565,26 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
         if (payee.nVotes >= nMaxSignatures && payee.nVotes >= MNPAYMENTS_SIGNATURES_REQUIRED)
             nMaxSignatures = payee.nVotes;
 
+		
+	bool foundDevFee = false;
+	BOOST_FOREACH (CMasternodePayee& payee, vecPayments) {
+		if(payee.scriptPubKey == developerfeescriptpubkey) {
+				if(out.nValue >= requiredDeveloperPayment) {
+					foundDevFee = true;
+					LogPrintf("Developer-Fee Payment found! Thanks for supporting ALQO!");
+				}
+		}
+	}
+	
+	if(nBlockHeight >= 225000 && !foundDevFee) {
+		LogPrintf("CMasternodePayments::IsTransactionValid - Missing developerfee of %s\n", FormatMoney(requiredDeveloperPayment).c_str());
+		return false;
+	}
+	
+	
     // if we don't have at least 6 signatures on a payee, approve whichever is the longest chain
     if (nMaxSignatures < MNPAYMENTS_SIGNATURES_REQUIRED) return true;
-
 	
-	bool foundDevFee = false;
-		
     BOOST_FOREACH (CMasternodePayee& payee, vecPayments) {
         bool found = false;
         BOOST_FOREACH (CTxOut out, txNew.vout) {
@@ -580,13 +594,6 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
                 else
                     LogPrintf("Masternode payment is out of drift range. Paid=%s Min=%s\n", FormatMoney(out.nValue).c_str(), FormatMoney(requiredMasternodePayment).c_str());
             }
-			
-			if(payee.scriptPubKey == developerfeescriptpubkey) {
-				if(out.nValue >= requiredDeveloperPayment) {
-					foundDevFee = true;
-					LogPrintf("Developer-Fee Payment found! Thanks for supporting ALQO!");
-				}
-			}
         }
 
         if (payee.nVotes >= MNPAYMENTS_SIGNATURES_REQUIRED) {
@@ -603,11 +610,6 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
             }
         }
     }
-
-	if(!foundDevFee)
-	{
-		LogPrintf("CMasternodePayments::IsTransactionValid - Missing developerfee of %s\n", FormatMoney(requiredDeveloperPayment).c_str());
-	}
 	
 	LogPrintf("CMasternodePayments::IsTransactionValid - Missing required payment of %s to %s\n", FormatMoney(requiredMasternodePayment).c_str(), strPayeesPossible.c_str());
 
