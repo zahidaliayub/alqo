@@ -578,11 +578,6 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
 		}
 	}
 	
-	if(nBlockHeight >= 225000 && !foundDevFee) {
-		LogPrintf("CMasternodePayments::IsTransactionValid - Missing developerfee of %s\n", FormatMoney(requiredDeveloperPayment).c_str());
-		return false;
-	}
-	
 	
     // if we don't have at least 6 signatures on a payee, approve whichever is the longest chain
     if (nMaxSignatures < MNPAYMENTS_SIGNATURES_REQUIRED) return true;
@@ -599,7 +594,7 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
         }
 
         if (payee.nVotes >= MNPAYMENTS_SIGNATURES_REQUIRED) {
-            if (found && foundDevFee) return true;
+            if (found) return true;
 
             CTxDestination address1;
             ExtractDestination(payee.scriptPubKey, address1);
