@@ -8,8 +8,8 @@ For further information visit us at [alqo.org](https://alqo.org/) or visit our A
 
 # Coin Specs
 
-• Coin Name: ALQO
-• Ticker: XLQ
+• Coin Name: ALQO  
+• Ticker: XLQ  
 • PoW Algorithm: Quark  
 • Premine: (#1 Block) 100,001 ALQO (0,17% of PoW)*  
 • PoW Blocks: 2 - 475200  
