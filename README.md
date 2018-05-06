@@ -26,13 +26,13 @@ For further information visit us at [alqo.org](https://alqo.org/) or visit our A
 _Proof of Work block rewards, masternode reward allocation starting at the 10th November 2017_
 <table>
   <tr><th>Block Height</th><th>Reward Amount</th><th>Masternodes</th><th>Miners</th><th>DevFee</th></tr>
-  <tr><td>Block 2 - 86400</td><td>200 ALQO</td><td>   Masternodes 20%</td><td>Miners 80%</td><td>0%</td></tr>
-<tr><td>Block 86401 - 151200</td><td>150 ALQO</td><td>  Masternodes 25%</td><td>Miners 75%</td><td>0%</td></tr>
-<tr><td>Block 151201 - 225000</td><td>125 ALQO</td><td>  Masternodes 30%</td><td>Miners 70%</td><td>0%</td></tr>
-<tr><td>Block 225001 - 302400</td><td>125 ALQO</td><td>  Masternodes 60%</td><td>Miners 35%</td><td>5%</td></tr>
-<tr><td>Block 302401 - 345600</td><td>100 ALQO</td><td>   Masternodes 60%</td><td>Miners 35%</td><td>5%</td></tr>
-<tr><td>Block 345601 - 388800</td><td>75 ALQO</td><td>      Masternodes 60%</td><td>Miners 35%</td><td>5%</td></tr>
-<tr><td>Block 388801 - 475200</td><td>50 ALQO</td><td>      Masternodes 60%</td><td>Miners 35%</td><td>5%</td></tr>
+  <tr><td>Block 2 - 86400</td><td>200 ALQO</td><td>   Masternodes 40 XLQ</td><td>Miners 160 XLQ</td><td>0 XLQ</td></tr>
+<tr><td>Block 86401 - 151200</td><td>150 ALQO</td><td>  Masternodes 37,5 XLQ</td><td>Miners 112,5 XLQ</td><td>0 XLQ</td></tr>
+<tr><td>Block 151201 - 225000</td><td>125 ALQO</td><td>  Masternodes 37,5 XLQ</td><td>Miners 87,5 XLQ</td><td>0 XLQ</td></tr>
+<tr><td>Block 225001 - 302400</td><td>125 ALQO</td><td>  Masternodes 37,5 XLQ</td><td>Miners 87,5 XLQ</td><td>6,25 XLQ</td></tr>
+<tr><td>Block 302401 - 345600</td><td>100 ALQO</td><td>   Masternodes 35 XLQ</td><td>Miners 65 XLQ</td><td>5 XLQ</td></tr>
+<tr><td>Block 345601 - 388800</td><td>75 ALQO</td><td>      Masternodes 30 XLQ</td><td>Miners 45 XLQ</td><td>3,75 XLQ</td></tr>
+<tr><td>Block 388801 - 475200</td><td>50 ALQO</td><td>      Masternodes 20 XLQ</td><td>Miners 30 XLQ</td><td>2,5 XLQ</td></tr>
 </table>
 
 Masternode and staker rewards with PoS:
