@@ -21,7 +21,7 @@ For further information visit us at [alqo.org](https://alqo.org/) or visit our A
 • Maturity: 111 Confirmations  
 • Prefix: ALQO adresses start with the capital letter "A"   
 
-*the premine is going to be burned 01.November 2018
+*the premine is going to be burned at the 1st November 2018
 
 # PoW Reward Distribution
 
