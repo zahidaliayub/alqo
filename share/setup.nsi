@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 3.2.0
+!define VERSION 3.5.0
 !define COMPANY "ALQO Core project"
 !define URL http://bit.alqos/
 
