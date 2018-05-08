@@ -25,7 +25,6 @@ For further information visit us at [alqo.org](https://alqo.org/) or visit our A
 
 # PoW Reward Distribution
 
-_Proof of Work block rewards, masternode reward allocation starting at the 10th November 2017_
 <table>
   <tr><th>Block Height</th><th>Reward Amount</th><th>Masternodes</th><th>Miners</th><th>DevFee</th></tr>
   <tr><td>Block 2 - 86400</td><td>200 XLQ</td><td>   Masternodes 40 XLQ</td><td>Miners 160 XLQ</td><td>0 XLQ</td></tr>
