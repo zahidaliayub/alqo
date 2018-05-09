@@ -25,16 +25,15 @@ For further information visit us at [alqo.org](https://alqo.org/) or visit our A
 
 # PoW Reward Distribution
 
-_Proof of Work block rewards, masternode reward allocation starting at the 10th November 2017_
 <table>
   <tr><th>Block Height</th><th>Reward Amount</th><th>Masternodes</th><th>Miners</th><th>DevFee</th></tr>
   <tr><td>Block 2 - 86400</td><td>200 XLQ</td><td>   Masternodes 40 XLQ</td><td>Miners 160 XLQ</td><td>0 XLQ</td></tr>
 <tr><td>Block 86401 - 151200</td><td>150 XLQ</td><td>  Masternodes 37,5 XLQ</td><td>Miners 112,5 XLQ</td><td>0 XLQ</td></tr>
 <tr><td>Block 151201 - 225000</td><td>125 XLQ</td><td>  Masternodes 37,5 XLQ</td><td>Miners 87,5 XLQ</td><td>0 XLQ</td></tr>
-<tr><td>Block 225001 - 302400</td><td>125 XLQ</td><td>  Masternodes 37,5 XLQ</td><td>Miners 87,5 XLQ</td><td>6,25 XLQ</td></tr>
-<tr><td>Block 302401 - 345600</td><td>100 XLQ</td><td>   Masternodes 35 XLQ</td><td>Miners 65 XLQ</td><td>5 XLQ</td></tr>
-<tr><td>Block 345601 - 388800</td><td>75 XLQ</td><td>      Masternodes 30 XLQ</td><td>Miners 45 XLQ</td><td>3,75 XLQ</td></tr>
-<tr><td>Block 388801 - 475200</td><td>50 XLQ</td><td>      Masternodes 20 XLQ</td><td>Miners 30 XLQ</td><td>2,5 XLQ</td></tr>
+<tr><td>Block 225001 - 302400</td><td>125 XLQ</td><td>  Masternodes 75 XLQ</td><td>Miners 43,75 XLQ</td><td>6,25 XLQ</td></tr>
+<tr><td>Block 302401 - 345600</td><td>100 XLQ</td><td>   Masternodes 60 XLQ</td><td>Miners 35 XLQ</td><td>5 XLQ</td></tr>
+<tr><td>Block 345601 - 388800</td><td>75 XLQ</td><td>      Masternodes 45 XLQ</td><td>Miners 26,25 XLQ</td><td>3,75 XLQ</td></tr>
+<tr><td>Block 388801 - 475200</td><td>50 XLQ</td><td>      Masternodes 30 XLQ</td><td>Miners 17,5 XLQ</td><td>2,5 XLQ</td></tr>
 </table>
 
 Masternode and staker rewards with PoS:
