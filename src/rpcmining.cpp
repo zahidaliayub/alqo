@@ -417,10 +417,10 @@ Value getblocktemplate(const Array& params, bool fHelp)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid mode");
 
     if (vNodes.empty())
-        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Xuma is not connected!");
+        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "ALQO is not connected!");
 
     if (IsInitialBlockDownload())
-        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Xuma is downloading blocks...");
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "ALQO is downloading blocks...");
 
     static unsigned int nTransactionsUpdatedLast;
 
@@ -585,7 +585,6 @@ Value getblocktemplate(const Array& params, bool fHelp)
     result.push_back(Pair("masternode_payments", pblock->nTime > Params().StartMasternodePayments()));
     result.push_back(Pair("enforce_masternode_payments", true));
 
-	result.push_back(Pair("developerfee_amount", (int64_t)pblock->vtx[0].vout[2].nValue));
 	result.push_back(Pair("developerfee_wallet", Params().GetDeveloperFeePayee()));
     return result;
 }

@@ -338,9 +338,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         }
 
 		//Masternode and general budget payments
-		FillBlockPayee(txNew, nFees, fProofOfStake);
-		
-		txNew.vout[0].nValue += nFees;
+        FillBlockPayee(txNew, nFees, fProofOfStake);
 			
         if (!fProofOfStake) {
             //Make payee
