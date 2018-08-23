@@ -1,7 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The ALQO & Bitfineon developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,18 +19,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(ALQO);
-    unitlist.append(mALQO);
-    unitlist.append(uALQO);
+    unitlist.append(XLQ);
+    unitlist.append(mXLQ);
+    unitlist.append(uXLQ);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case ALQO:
-    case mALQO:
-    case uALQO:
+    case XLQ:
+    case mXLQ:
+    case uXLQ:
         return true;
     default:
         return false;
@@ -41,11 +40,11 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case ALQO:
+    case XLQ:
         return QString("alqo");
-    case mALQO:
+    case mXLQ:
         return QString("malqo");
-    case uALQO:
+    case uXLQ:
         return QString::fromUtf8("ualqo");
     default:
         return QString("???");
@@ -56,23 +55,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case ALQO:
-            return QString("ALQO");
-        case mALQO:
-            return QString("mALQO");
-        case uALQO:
-            return QString::fromUtf8("μALQO");
+        case XLQ:
+            return QString("XLQ");
+        case mXLQ:
+            return QString("mXLQ");
+        case uXLQ:
+            return QString::fromUtf8("μXLQ");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case ALQO:
-            return QString("tALQO");
-        case mALQO:
-            return QString("mtALQO");
-        case uALQO:
-            return QString::fromUtf8("μtALQO");
+        case XLQ:
+            return QString("tXLQ");
+        case mXLQ:
+            return QString("mtXLQ");
+        case uXLQ:
+            return QString::fromUtf8("μtXLQ");
         default:
             return QString("???");
         }
@@ -83,23 +82,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case ALQO:
-            return QString("ALQO");
-        case mALQO:
-            return QString("Milli-ALQO (1 / 1" THIN_SP_UTF8 "000)");
-        case uALQO:
-            return QString("Micro-ALQO (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case XLQ:
+            return QString("XLQ");
+        case mXLQ:
+            return QString("Milli-XLQ (1 / 1" THIN_SP_UTF8 "000)");
+        case uXLQ:
+            return QString("Micro-XLQ (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case ALQO:
-            return QString("TestALQOs");
-        case mALQO:
-            return QString("Milli-TestALQO (1 / 1" THIN_SP_UTF8 "000)");
-        case uALQO:
-            return QString("Micro-TestALQO (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case XLQ:
+            return QString("TestXLQs");
+        case mXLQ:
+            return QString("Milli-TestXLQ (1 / 1" THIN_SP_UTF8 "000)");
+        case uXLQ:
+            return QString("Micro-TestXLQ (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +108,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case ALQO:
+    case XLQ:
         return 100000000;
-    case mALQO:
+    case mXLQ:
         return 100000;
-    case uALQO:
+    case uXLQ:
         return 100;
     default:
         return 100000000;
@@ -123,11 +122,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case ALQO:
+    case XLQ:
         return 8;
-    case mALQO:
+    case mXLQ:
         return 5;
-    case uALQO:
+    case uXLQ:
         return 2;
     default:
         return 0;

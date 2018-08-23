@@ -22,9 +22,9 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage:http://bit.alqos/
-Vcs-Git: git://github.com/ALQOCRYPTO/ALQO
-Vcs-Browser: http://github.com/ALQOCRYPTO/ALQO
+Homepage: http://www.alqo.org
+Vcs-Git: git://github.com/ALQO-Project/ALQO.git
+Vcs-Browser: http://github.com/ALQO-Project/ALQO
 
 Package: alqod
 Architecture: any

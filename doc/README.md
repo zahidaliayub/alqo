@@ -3,7 +3,7 @@ ALQO Core
 
 Setup
 ---------------------
-[ALQO Core]http://bit.alqos/ is the original ALQO client and it builds the backbone of the network. However, it downloads and stores the entire history of ALQO transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[ALQO Core](http://alqo.org/wallet) is the original ALQO client and it builds the backbone of the network. However, it downloads and stores the entire history of ALQO transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -28,8 +28,9 @@ Drag ALQO-Qt to your applications folder, and then run ALQO-Qt.
 
 * See the documentation at the [ALQO Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1604893.0) or on the [ALQO Forum](https://google.forum.com/).
-* Join one of our Slack groups [ALQO Slack Groups](https://google.slack.com/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [ALQO Forum](http://forum.alqo.org/).
+* Join our Discord server [Discord Server](https://discord.alqo.org)
+* Join one of our Slack groups [ALQO Slack Groups](https://alqo.org/slack-logins/) (Main community is replaced by Discord).
 
 Building
 ---------------------
@@ -41,7 +42,7 @@ The following are developer notes on how to build ALQO on your native platform. 
 
 Development
 ---------------------
-The ALQO repo's [root README](https://github.com/ALQOCRYPTO/ALQO/blob/master/README.md) contains relevant information on the development process and automated testing.
+The ALQO repo's [root README](https://github.com/ALQO-Project/ALQO/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -55,8 +56,8 @@ The ALQO repo's [root README](https://github.com/ALQOCRYPTO/ALQO/blob/master/REA
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1604893.0) or the [ALQO](https://google.forum.com/) forum.
-* Join the [ALQO-Dev](https://google.slack.com/) 
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [ALQO](http://forum.alqo.org/) forum.
+* Join the [ALQO-Dev](https://alqo-dev.slack.com/) Slack group ([Sign-Up](https://alqo-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

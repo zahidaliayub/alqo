@@ -34,6 +34,9 @@ build-aux/test-driver
 config.log
 config.status
 configure
+confdefs.h
+conftest.cpp
+conftest.err
 libtool
 src/config/alqo-config.h
 src/config/alqo-config.h.in
@@ -121,3 +124,7 @@ qa/pull-tester/test.*/*
 .project
 /doc/doxygen/
 /nbproject/
+
+.idea
+CMakeLists.txt
+cmake-build-debug
