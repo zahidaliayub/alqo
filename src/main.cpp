@@ -1814,7 +1814,7 @@ int64_t GetBlockValue(int nHeight)
 	
 	if (nHeight == 0) return 100001 * COIN;
 		
-	int64_t nSubsidy;
+	int64_t nSubsidy = 1 * COIN;
 	
 	if(nHeight <= 86400 && nHeight > 0) {
         nSubsidy = 200 * COIN;
@@ -1828,7 +1828,9 @@ int64_t GetBlockValue(int nHeight)
 		nSubsidy = 75 * COIN;
 	} else if (nHeight > 388800 && nHeight <= 408960) { // 408960 => LAST POW BLOCK
 		nSubsidy = 50 * COIN;
-	} else if (nHeight > 408960 && nHeight <= 538560) { // 408961 => FIRST POS BLOCK
+	} else if (nHeight > 408960 && nHeight <= 411840) { // 408961 => 1 ALQO FOR THE FIRST 2 DAYS OF PoS
+		nSubsidy = 1 * COIN;
+	} else if (nHeight > 411840 && nHeight <= 538560) { // 411840 => FIRST REAL POS BLOCK
 		nSubsidy = 60 * COIN;
 	} else if (nHeight > 538560 && nHeight <= 581760) {
 		nSubsidy = 25 * COIN;
