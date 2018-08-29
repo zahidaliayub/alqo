@@ -134,7 +134,7 @@ public:
 		strDeveloperFeePayee = "AG6MCBRozzcQMMi2SXdi4TJhhLeycQERyk";
 		
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 408960;
+        nLastPOWBlock = 409000;
         nModifierUpdateBlock = 615800;
         nZerocoinStartHeight = 1000000;
         nZerocoinStartTime = 1577836800;
@@ -172,6 +172,7 @@ public:
         vSeeds.push_back(CDNSSeedData("mainseed2.alqoseednodes.org", "mainseed2.alqoseednodes.org"));
         vSeeds.push_back(CDNSSeedData("85.25.138.64", "85.25.138.64"));
 
+		vSeeds.push_back(CDNSSeedData("85.25.185.184", "85.25.185.184"));
 		vSeeds.push_back(CDNSSeedData("198.199.119.77", "198.199.119.77"));
 		vSeeds.push_back(CDNSSeedData("195.181.243.147", "195.181.243.147"));
 		vSeeds.push_back(CDNSSeedData("144.202.65.112", "144.202.65.112"));
