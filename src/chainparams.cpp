@@ -58,7 +58,12 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 	(225001, uint256("0x0000000000001f44d85b8f2b5ead0630f2796cb2d26017f79b7a0221d17d4da2"))
 	(225020, uint256("0x0000000000016246ac12933f8afa593f1846ba468a6bdc0c85e40c19b9b0ccca"))
 	(225040, uint256("0x0000000000022a323903976c5d4bf0fc3434922dad1f6e30804ac40b2117ac25"))
-	(225200, uint256("0x000000000000447aace641e9e58af4f4b94336e10cf945cdb28479cd262db059"));
+	(225200, uint256("0x000000000000447aace641e9e58af4f4b94336e10cf945cdb28479cd262db059"))
+	(408957, uint256("0x000000000000165f8d86b135c62c54e25baa50bbcfa256912c0cfed10ffe3492"))
+	(408958, uint256("0x0000000000009ec90881d23f2f21944986908faec5813a8ad061a31274d95628"))
+	(408959, uint256("0000000000001ba844be20418bab5a4fdc76e2cd3467bc89807bf5b405bba6cf"))
+	(408960, uint256("00000000000199027974478f7618aa5b6b014acff5b6a7a4f8b6d105877d6773"))
+	(408961, uint256("0x00000000000037f84356b50879f6e11f07931d0815fdbce01ca47545f2fe5a99"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1523809869, // * UNIX timestamp of last checkpoint block
@@ -170,9 +175,11 @@ public:
 
         vSeeds.push_back(CDNSSeedData("mainseed.alqoseednodes.org", "mainseed.alqoseednodes.org"));
         vSeeds.push_back(CDNSSeedData("mainseed2.alqoseednodes.org", "mainseed2.alqoseednodes.org"));
+		
         vSeeds.push_back(CDNSSeedData("85.25.138.64", "85.25.138.64"));
-
 		vSeeds.push_back(CDNSSeedData("85.25.185.184", "85.25.185.184"));
+		vSeeds.push_back(CDNSSeedData("62.138.0.103", "62.138.0.103"));
+		
 		vSeeds.push_back(CDNSSeedData("198.199.119.77", "198.199.119.77"));
 		vSeeds.push_back(CDNSSeedData("195.181.243.147", "195.181.243.147"));
 		vSeeds.push_back(CDNSSeedData("144.202.65.112", "144.202.65.112"));

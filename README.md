@@ -9,8 +9,8 @@ For more information please visit us at: [alqo.org](https://alqo.org/) or visit 
 • Ticker: XLQ  
 • PoW Algorithm: Quark  
 • Premine: (#1 Block) 100,001 ALQO (0,17% of PoW)*  
-• PoW Blocks: 2 - 408960  
-• PoS Blocks: Starting from 408961  
+• PoW Blocks: 2 - 409000  
+• PoS Blocks: Starting from 409001  
 • Block Time: 60 Seconds
 • PoW Max Coin Output/Supply: 57,879,300  
 • PoW Ending: ~ ca. 330 Days (Estimated: October 2018)  
@@ -31,6 +31,7 @@ For more information please visit us at: [alqo.org](https://alqo.org/) or visit 
 <tr><td>Block 302401 - 345600</td><td>100 XLQ</td><td>   Masternodes 60 XLQ</td><td>Miners 35 XLQ</td><td>5 XLQ</td></tr>
 <tr><td>Block 345601 - 388800</td><td>75 XLQ</td><td>      Masternodes 45 XLQ</td><td>Miners 26,25 XLQ</td><td>3,75 XLQ</td></tr>
 <tr><td>Block 388801 - 408960</td><td>50 XLQ</td><td>      Masternodes 30 XLQ</td><td>Miners 17,5 XLQ</td><td>2,5 XLQ</td></tr>
+<tr><td>Block 408961 - 409000</td><td>1 XLQ</td><td>      Masternodes 0.6 XLQ</td><td>Miners 0.35 XLQ</td><td>0.5 XLQ</td></tr>
 </table>
 
 Masternode and staking rewards with PoS:
@@ -38,13 +39,14 @@ During the PoS phase, rewards will be distributed among masternode operators, st
 
 # PoS Reward Distribution
 
-_Proof of Stake will automatically be enabled at block height 408961._
+_Proof of Stake will automatically be enabled at block height 409001._
 <table>
 <tr><th>Block Height</th><th>Reward Amount</th>
-<tr><td>Block 408961 - 538560</td><td>60 XLQ</td></tr>
-<tr><td>Block 538561 - 581760</td><td>25 XLQ</td></tr>
-<tr><td>Block 581761 - 624960</td><td>10 XLQ</td></tr>
-<tr><td>Block 624961 - infinite</td><td>5 XLQ</td></tr>
+<tr><td>Block 409001 - 410400</td><td>1 XLQ</td></tr>
+<tr><td>Block 410401 - 540000</td><td>60 XLQ</td></tr>
+<tr><td>Block 540001 - 583200</td><td>25 XLQ</td></tr>
+<tr><td>Block 583201 - 626400</td><td>10 XLQ</td></tr>
+<tr><td>Block 626401 - infinite</td><td>5 XLQ</td></tr>
 </table>
 
 
