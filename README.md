@@ -35,7 +35,7 @@ For more information please visit us at: [alqo.org](https://alqo.org/) or visit 
 </table>
 
 Masternode and staking rewards with PoS:
-During the PoS phase, rewards will be distributed among masternode operators, stakers and the dev fund based on a distribution ratio of 50%/40%/10% respectively.
+During the PoS phase, rewards will be distributed among masternode operators, stakers and the dev fund based on a distribution ratio of 60%/30%/10% respectively.
 
 # PoS Reward Distribution
 
@@ -43,10 +43,10 @@ _Proof of Stake will automatically be enabled at block height 409001._
 <table>
 <tr><th>Block Height</th><th>Reward Amount</th>
 <tr><td>Block 409001 - 410400</td><td>1 XLQ</td></tr>
-<tr><td>Block 410401 - 540000</td><td>60 XLQ</td></tr>
-<tr><td>Block 540001 - 583200</td><td>25 XLQ</td></tr>
-<tr><td>Block 583201 - 626400</td><td>10 XLQ</td></tr>
-<tr><td>Block 626401 - infinite</td><td>5 XLQ</td></tr>
+<tr><td>Block 411841 - 538560</td><td>60 XLQ</td></tr>
+<tr><td>Block 538561 - 581760</td><td>25 XLQ</td></tr>
+<tr><td>Block 581761 - 624960</td><td>10 XLQ</td></tr>
+<tr><td>Block 624961 - infinite</td><td>5 XLQ</td></tr>
 </table>
 
 
