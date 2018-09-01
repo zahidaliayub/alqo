@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The ALQO & Bitfineon developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2017-2018 The ALQO & Bitfineon developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -74,13 +75,22 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
         } else {
             //Masternode reward
             CTxDestination destMN;
-            int nIndexMN = wtx.vout.size() - 1;
+            int nIndexMN = wtx.vout.size() - 2;
             if (ExtractDestination(wtx.vout[nIndexMN].scriptPubKey, destMN) && IsMine(*wallet, destMN)) {
                 isminetype mine = wallet->IsMine(wtx.vout[nIndexMN]);
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 sub.type = TransactionRecord::MNReward;
                 sub.address = CBitcoinAddress(destMN).ToString();
                 sub.credit = wtx.vout[nIndexMN].nValue;
+            }
+            CTxDestination destDF;
+            int nIndexDF = wtx.vout.size() - 1;
+            if (ExtractDestination(wtx.vout[nIndexDF].scriptPubKey, destDF) && IsMine(*wallet, destDF)) {
+                isminetype mine = wallet->IsMine(wtx.vout[nIndexDF]);
+                sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
+                sub.type = TransactionRecord::RecvFromOther;
+                sub.address = CBitcoinAddress(destMN).ToString();
+                sub.credit = wtx.vout[nIndexDF].nValue;
             }
         }
 
